@@ -2,14 +2,14 @@
 
 
 // AWS Configuration
-AWS.config.region = 'us-east-1'; // e.g. us-east-1
+AWS.config.region = 'us-west-2'; // e.g. us-east-1
 AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-    IdentityPoolId: 'us-east-1:a9205d55-c920-431e-8fee-3c23c54ac95c', // e.g. us-east-1:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+    IdentityPoolId: 'us-west-2:830a25a6-c3a2-40a5-8218-93faf9d6ac83', // e.g. us-east-1:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 });
 
 const cognitoUserPool = new AmazonCognitoIdentity.CognitoUserPool({
-    UserPoolId: 'us-east-1_c9kyS3kGC', // e.g. us-east-1_xxxxxxxx
-    ClientId: '5m2phs2aq65jbr6fjvoojq8969', // e.g. xxxxxxxxxxxxxxxxxxxxxxxxxx
+    UserPoolId: 'us-west-2_K8wlZJp5p', // e.g. us-east-1_xxxxxxxx
+    ClientId: '1i6q8mhs3tv5v18m686bsri1a', // e.g. xxxxxxxxxxxxxxxxxxxxxxxxxx
 });
 
 const apiGatewayUrl = 'https://jper4a5cak.execute-api.us-east-1.amazonaws.com/dev'; // e.g. https://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/prod
